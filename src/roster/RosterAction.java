@@ -1242,18 +1242,6 @@ public class RosterAction extends ActionSupport {
     }  
   
     public String fileUpload() {  
-    	System.out.println("==================这里是upload=============================");
-    	System.out.println("==================这里是uploaduuid============================="+uuid);
-    	/*if(myFile1!=null){
-    		
-    		myFile.add(myFile1);
-    	}
-    	if(myFile2!=null){
-    		
-    		myFile.add(myFile2);
-    	}*/
-    	System.out.println("==================myFile============================="+myFile1);
-    	System.out.println("==================myFile============================="+myFile2);
     	Session session = Hfsession.init();
     	Transaction tx = session.beginTransaction();
     	Map<String,Object> map = new HashMap<String,Object>();
@@ -1261,7 +1249,6 @@ public class RosterAction extends ActionSupport {
             return INPUT;  
         }
         String str ="";
-       // System.out.println("========================myfilesize==========================="+myFile.size());
         try {
 	        for (int i = 0; i < myFile.size(); i++) {  
 	        	System.out.println("========================myfile==========================="+myFile.get(i));
