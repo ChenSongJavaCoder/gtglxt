@@ -1203,7 +1203,6 @@ public class RosterAction extends ActionSupport {
 				map.put("statusCode", 300);
 				ResultUtils.toJson(ServletActionContext.getResponse(), map);
 			}*/
-			//tx.commit();
 			Hfsession.close();
 		} catch (Exception e) {
 			e.printStackTrace();
