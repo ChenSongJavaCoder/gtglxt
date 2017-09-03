@@ -1132,15 +1132,6 @@ public class RosterAction extends ActionSupport {
 			page.setTotalPage((int) Math.ceil(count / 20.0));//
 			page.setHasPrePage(currentPage > 1);
 			page.setHasNextPage(currentPage < (int) (Math.ceil(count / 20.0)));
-//			map.put("page", page);
-//			if(list.size()>0){
-//				map.put("statusCode", 200);
-//				map.put("list",list);
-//				ResultUtils.toJson(ServletActionContext.getResponse(), map);
-//			}else{
-//				map.put("statusCode", 300);
-//				ResultUtils.toJson(ServletActionContext.getResponse(), map);
-//			}
 			tx.commit();
 			Hfsession.close();
 		} catch (Exception e) {
@@ -1192,7 +1183,7 @@ public class RosterAction extends ActionSupport {
             page.setTotalPage((int) Math.ceil(count / 20.0));//
             page.setHasPrePage(currentPage>1);
 			page.setHasNextPage(currentPage<(int)(Math.ceil(count/20.0)));
-			/*map.put("page", page); 
+            /*map.put("page", page);
 			if(list.size()>0){
 				map.put("statusCode", 200);
 				map.put("list",list);
