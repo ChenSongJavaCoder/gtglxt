@@ -1190,10 +1190,9 @@ public class RosterAction extends ActionSupport {
 			}
 			q2.setFirstResult((currentPage-1)*20); 
 			q2.setMaxResults(20);                                                                                                                                                                                   
-			list = q2.list();	
-			//System.out.println("q集合的大小====="+list.size());
-			page.setTotalPage((int)Math.ceil(count/20.0));// 
-			page.setHasPrePage(currentPage>1);
+			list = q2.list();
+            page.setTotalPage((int) Math.ceil(count / 20.0));//
+            page.setHasPrePage(currentPage>1);
 			page.setHasNextPage(currentPage<(int)(Math.ceil(count/20.0)));
 			/*map.put("page", page); 
 			if(list.size()>0){
