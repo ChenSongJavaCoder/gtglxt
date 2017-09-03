@@ -1161,7 +1161,6 @@ public class RosterAction extends ActionSupport {
 
     	Session session = Hfsession.init();
 		Map<String,Object> map = new HashMap<String,Object>();
-		//List<Roster> list = new ArrayList<Roster>();
 		//Page page = new Page();
 		page.setEveryPage(20);
 		page.setCurrentPage(1);
