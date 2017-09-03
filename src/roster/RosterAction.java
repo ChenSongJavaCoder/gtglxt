@@ -1160,7 +1160,6 @@ public class RosterAction extends ActionSupport {
     public  String getYujingList(){ //代缴社保预期 date1==当前日期，date2==社保结束日期 
 
     	Session session = Hfsession.init();
-		//Transaction tx = session.beginTransaction();
 		Map<String,Object> map = new HashMap<String,Object>();
 		//List<Roster> list = new ArrayList<Roster>();
 		//Page page = new Page();
