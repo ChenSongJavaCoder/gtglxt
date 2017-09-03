@@ -1039,7 +1039,6 @@ public class RosterAction extends ActionSupport {
 			//导入添加人员
 			for(int i =0; i<list.size();i++) {
 				//如果身份证不为空给加
-				//System.out.println("================================================================"+info.getIdentityId());
 				if (list.get(i).getIdentityId()!=null && !"".equals(list.get(i).getIdentityId())) {
 					session.save(list.get(i));
 				}else{
