@@ -1250,11 +1250,10 @@ public class RosterAction extends ActionSupport {
         }
         String str ="";
         try {
-	        for (int i = 0; i < myFile.size(); i++) {  
-	        	System.out.println("========================myfile==========================="+myFile.get(i));
-	            imageFileName.add(new Date().getTime()+ getExtention(this.getMyFileFileName().get(i))) ;  
-	           
-	            File imageFile = new File(ServletActionContext.getServletContext()  //得到图片保存的位置(根据root来得到图片保存的路径在tomcat下的该工程里)  
+	        for (int i = 0; i < myFile.size(); i++) {
+                imageFileName.add(new Date().getTime() + getExtention(this.getMyFileFileName().get(i)));
+
+                File imageFile = new File(ServletActionContext.getServletContext()  //得到图片保存的位置(根据root来得到图片保存的路径在tomcat下的该工程里)
 	      
 	                    .getRealPath("UploadImages")     
 	                    + "/" + imageFileName.get(i));  
