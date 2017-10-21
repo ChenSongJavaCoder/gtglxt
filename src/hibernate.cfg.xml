@@ -18,6 +18,11 @@
 		<!--<property name="hibernate.connection.username">root</property>-->
 		<!--<property name="hibernate.connection.password">123456</property>-->
 
+
+
+
+
+
 		<property name="hibernate.connection.url">jdbc:mysql://rm-uf6533mo112otpf4so.mysql.rds.aliyuncs.com:3306/gt?useUnicode=true&amp;characterEncoding=utf8</property>
 		<property name="hibernate.connection.username">rootadmin</property>
 		<property name="hibernate.connection.password">rootAdmin@123</property>
